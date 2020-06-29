@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url("../Ảnh/hinh-nen-vu-tru-50.jpg");
+}
+
+h1  {
+    text-align: center;
+    color: blue;
+}
+#myCanvas {
+    border: 10px solid aqua;
+}
+#start {
+    margin-top: 10px;;
+    width: 130px;
+    height: 30px;
+    border: 1px solid red;
+    background-color:greenyellow;
+    color: red;
+    font-size: 20px;
+}
+#restart {
+    margin-top: 10px;;
+    width: 120px;
+    height: 30px;
+    margin-left: 15px;
+    border: 1px solid red;
+    background-color:greenyellow;
+    color: red;
+    font-size: 20px;
+}
+#restart1 {
+    margin-top: 10px;;
+    width: 120px;
+    height: 30px;
+    margin-left: 15px;
+    border: 1px solid red;
+    background-color:yellow;
+    color: red;
+    font-size: 20px;
+}
+#son{
+    display: flex;
+    justify-content: center;
+}
