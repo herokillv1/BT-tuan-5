@@ -29,7 +29,6 @@ function load() {
     ball.drawBall();
     paddle.drawPaddle();
     monster.drawMonster();
-
 }
  load();
 

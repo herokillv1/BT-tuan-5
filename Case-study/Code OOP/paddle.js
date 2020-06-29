@@ -29,7 +29,7 @@ let Paddle = function (paddleHeight,paddleWidth,paddleX) {
     this.drawPaddle = function () {
         ctx.beginPath();
         ctx.rect(this.paddleX, canvas.height - this.paddleHeight, this.paddleWidth, this.paddleHeight);
-        ctx.fillStyle = "#ececec";
+        ctx.fillStyle = "#0000dd";
         ctx.fill();
         ctx.closePath();
     }

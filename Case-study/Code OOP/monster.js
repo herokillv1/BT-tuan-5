@@ -1,12 +1,12 @@
 let Monster = function (monsterRowCount,monsterColumnCount,
                         monsterWidth,monsterHeight,
-                        monsterPadding,monsterOffsetTop,
+                        monsterRange,monsterOffsetTop,
                         monsterOffsetLeft,score) {
     this.monsterRowCount = monsterRowCount;
     this.monsterColumnCount = monsterColumnCount;
     this.monsterWidth = monsterWidth;
     this.monsterHeight = monsterHeight;
-    this.monsterPadding = monsterPadding;
+    this.monsterRange = monsterRange;
     this.monsterOffsetTop = monsterOffsetTop;
     this.monsterOffsetLeft = monsterOffsetLeft;
     this.score = score ;
@@ -48,8 +48,8 @@ let Monster = function (monsterRowCount,monsterColumnCount,
         for (var i = 0; i < this.monsterColumnCount; i++) {
             for (var j = 0; j < this.monsterRowCount; j++) {
                 if (monster[i][j].status == 1) {
-                    var monsterX = (i * (this.monsterWidth + this.monsterPadding)) + this.monsterOffsetLeft;
-                    var monsterY = (j * (this.monsterHeight + this.monsterPadding)) + this.monsterOffsetTop;
+                    var monsterX = this.monsterOffsetLeft +(i * (this.monsterWidth + this.monsterRange))  ;
+                    var monsterY = this.monsterOffsetTop + (j * (this.monsterHeight + this.monsterRange)) ;
                     var color1 = getRandomColor();
                     monster[i][j].x = monsterX;
                     monster[i][j].y = monsterY;

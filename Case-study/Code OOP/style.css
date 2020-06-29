@@ -4,21 +4,37 @@ body{
     background-image: url("../Ảnh/hinh-nen-vu-tru-50.jpg");
 }
 
-h1  {
+h1 {
+    display: inline-block;
+    font: bold 4.5em/1.5 Bebas, sans-serif;
+    color: #5CA17C;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, #26BDA6, #FF9F65, #DED37E, #26BDA6);
+    background-size: auto 300%;
+    transition: background-position 0.5s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 70px;
+    background-position: 0 100%;
     text-align: center;
-    color: blue;
+}
+h1:hover {
+    background-position: 0 0;
+    cursor: pointer;
 }
 #myCanvas {
-    border: 10px solid aqua;
+    border: 10px solid white;
 }
 #start {
     margin-top: 10px;;
     width: 130px;
     height: 30px;
     border: 1px solid red;
-    background-color:greenyellow;
-    color: red;
+    color: black;
     font-size: 20px;
+    background-image: linear-gradient(to bottom, #26BDA6, #FF9F65, #DED37E, #26BDA6);
+    cursor: pointer;
 }
 #restart {
     margin-top: 10px;;
@@ -26,9 +42,10 @@ h1  {
     height: 30px;
     margin-left: 15px;
     border: 1px solid red;
-    background-color:greenyellow;
-    color: red;
+    color: black;
     font-size: 20px;
+    background-image: linear-gradient(to bottom, #26BDA6, #FF9F65, #DED37E, #26BDA6);
+    cursor: pointer;
 }
 #restart1 {
     margin-top: 10px;;
@@ -36,11 +53,14 @@ h1  {
     height: 30px;
     margin-left: 15px;
     border: 1px solid red;
-    background-color:yellow;
-    color: red;
+    color: black;
     font-size: 20px;
+    background-image: linear-gradient(to bottom, #26BDA6, #FF9F65, #DED37E, #26BDA6);
+    cursor: pointer;
 }
 #son{
     display: flex;
     justify-content: center;
 }
+
+

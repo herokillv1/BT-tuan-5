@@ -10,7 +10,7 @@ let Ball = function (x,y,dx,dy,radius,lives) {
     this.drawBall = function () {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI,true);
-        ctx.fillStyle = "#ff3333";
+        ctx.fillStyle = '#ff3333';
         ctx.fill();
         ctx.closePath();
     }
@@ -20,6 +20,7 @@ let Ball = function (x,y,dx,dy,radius,lives) {
         ctx.fillStyle = '#ececec';
         ctx.fillText("Lives: "+lives, canvas.width-65, 20);
     }
+
 
     this.moveBall = function () {
         if(this.x + this.dx > canvas.width-this.radius || this.x + this.dx < this.radius) {
@@ -33,7 +34,7 @@ let Ball = function (x,y,dx,dy,radius,lives) {
             }else {
                 lives--;
                 if (!lives){
-                    alert('NGHỈ HỌC BÀI ĐI CHO ĐỠ HẠI MẮT BẠN ƠI !!!');
+                    alert('Thua Rồi Bạn Ơi')
                     document.location.reload();
                 }else {
                     this.x = canvas.width/2;
