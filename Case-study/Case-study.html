@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Game bong bóng</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="Code OOP/style.css">
+    <script src="Code OOP/Audio.js"></script>
 </head>
-<body>
+<body onload="audio(x)">
 
 <div id="mother">
     <h1>GAME HẠI MẮT KHÔNG NÊN CHƠI</h1>
     <canvas id="myCanvas" width="1200" height="800" ></canvas>
     <div id="son">
-        <button type="button" id="start" onclick="playgame()"> PLAY </button>
+        <button type="button" id="start" onclick="playgame()" value="Play">PLAY</button>
+        <button type="button" id="restart1" onclick="restart()"> Play Audio </button>
         <button type="button" id="restart" onclick="restart()"> RESTART </button>
-        <script src="ball.js"></script>
-        <script src="paddle.js"></script>
-        <script src="random.js"></script>
-        <script src="monster.js"></script>
+        <script src="Code OOP/ball.js"></script>
+        <script src="Code OOP/paddle.js"></script>
+        <script src="Code OOP/random.js"></script>
+        <script src="Code OOP/monster.js"></script>
     </div>
 </div>
-<script src="main.js"></script>
-
+<script src="Code OOP/main.js"></script>
+<audio id="myAudio" src="Code%20OOP/audio.mp3" autoplay></audio>
 </body>
 </html>
