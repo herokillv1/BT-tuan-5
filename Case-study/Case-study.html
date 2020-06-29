@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Game bong bóng</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<canvas id="myCanvas" width='1124px' height="800px"
-        style="border: 10px solid aqua ; background-color: gray"></canvas>
-
-
-<script src="ball.js"></script>
+<div id="mother">
+    <h1>GAME HẠI MẮT KHÔNG NÊN CHƠI</h1>
+    <canvas id="myCanvas" width="1200" height="800" ></canvas>
+    <div id="son">
+        <button type="button" id="start" onclick="playgame()"> PLAY </button>
+        <button type="button" id="restart" onclick="restart()"> RESTART </button>
+        <script src="ball.js"></script>
+        <script src="paddle.js"></script>
+        <script src="random.js"></script>
+        <script src="monster.js"></script>
+    </div>
+</div>
+<script src="main.js"></script>
 
 </body>
 </html>
