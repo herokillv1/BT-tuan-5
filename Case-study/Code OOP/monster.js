@@ -15,7 +15,7 @@ let Monster = function (monsterRowCount,monsterColumnCount,
     this.drawScore = function () {
         ctx.font = "16px Arial";
         ctx.fillStyle = "#ececec";
-        ctx.fillText("Score: "+score, 8, 20);
+        ctx.fillText("Score: "+this.score, 8, 20);
     }
 
     for(var i=0; i<this.monsterColumnCount; i++) {
@@ -33,11 +33,7 @@ let Monster = function (monsterRowCount,monsterColumnCount,
                     if (ball.x > b.x && ball.x < b.x + this.monsterWidth && ball.y > b.y && ball.y < b.y + this.monsterHeight) {
                         ball.dy = -ball.dy;
                         b.status = 0;
-                        score++;
-                        if(score == this.monsterRowCount*this.monsterColumnCount) {
-                            alert("MẮT BẠN TỐT ĐẤY !!!");
-                            document.location.reload();
-                        }
+                        this.score++;
                     }
                 }
             }
@@ -60,6 +56,15 @@ let Monster = function (monsterRowCount,monsterColumnCount,
                     ctx.closePath();
                 }
             }
+        }
+    }
+
+    this.check2 = function () {
+        if (this.score == this.monsterRowCount*this.monsterColumnCount){
+            show.showWin();
+            ball.x = canvas.width / 2;
+            ball.y = canvas.height - 15;
+            paddle.paddleX = (canvas.width - 200) / 2;
         }
     }
 }
